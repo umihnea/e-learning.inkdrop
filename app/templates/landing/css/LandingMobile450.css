@@ -1,0 +1,467 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+/*NAVIGATION*/
+
+#navigation_container{
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+}
+#nav{
+	width: 100%;
+}
+#nav ul{
+	background-color: white;
+	list-style: none;
+	margin-top: 0;
+	border-bottom: 1px solid rgba(0, 137, 255, 0.9);
+}
+#nav ul a{
+	color: black;
+}
+.nav_el{
+	-webkit-transition: background-color 0.1s ease-in;
+	-moz-transition: background-color 0.1s ease-in;
+	-o-transition: background-color 0.1s ease-in;
+	transition: background-color 0.1s ease-in;
+	font-size: 1.4em;
+	display: inline-block;
+	padding: 15px 20px 15px 20px;
+	margin-right: -5px;
+	cursor: pointer;
+
+}
+.nav_el:hover{
+	background-color: rgba(0, 137, 255, 0.9);
+	color: white;
+}
+#login{
+	float: right;
+	color: black;
+}
+#login:hover{
+	background-color: rgba(0, 137, 255, 0.9);
+	color: white;
+}
+#sign_up{
+	margin-right: 40px;
+	float: right;
+	color: black;
+}
+#sign_up:hover{
+	background-color: rgba(0, 137, 255, 0.9);
+	color: white;
+}
+
+
+/*NAVIGATION END*/
+
+/*HEADER*/
+
+#header_container{
+	height: 580px;
+	width: 100%;
+	background-color: blue;
+	overflow: hidden;
+}
+#header{
+	margin-top: 80px;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/HandsOnKeyboard2.jpg');
+	background-size: cover;
+	background-repeat: none;
+}
+#header form{
+	position: absolute;
+	margin-top: 220px;
+	padding: 7px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#header h1{
+	position: absolute;
+	margin-top: 80px;
+	color: white;
+	text-shadow: 10px 5px 10px black;
+	font-size: 3.2em;
+}
+#header h2{
+	position: absolute;
+	margin-top: 140px;
+	color: white;
+	text-shadow: 10px 5px 10px black;
+}
+#header form, #header h1, #header h2{
+	margin-left: 6%;
+}
+#search_submit{
+	border: none;
+	border-radius: 0 5px 5px 0;
+	height: 42px; 
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bolder;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+#search_submit:hover{
+	color: white;
+	background-color: rgba(0, 137, 255, 0.9);
+}
+#search_text{
+	border: none;
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-o-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+	height: 40px;
+	width: 300px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+}
+#header h3{
+	text-shadow: 10px 5px 10px black;
+	margin-top: 300px;
+	margin-left: 18%;
+	color: white;
+	position: absolute;
+	font-size: 1.4em;	
+}
+#featured_courses_container{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+#featured_courses{
+	margin-top: 50px;
+	font-size: 1.6em;
+}
+#featured_courses2{
+	margin-top: 0px;
+	font-size: 1.6em;
+}
+.featured_collumn{
+	width: 40%;
+	height: 220px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	text-align: left;
+	margin: 10px;
+	-webkit-transition: box-shadow 0.05s ease-out;
+	-moz-transition: box-shadow 0.05s ease-out;
+	-o-transition: box-shadow 0.05s ease-out;
+	transition: box-shadow 0.05s ease-out;
+	cursor: pointer;
+}
+.featured_collumn p{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.featured_collumn:hover{
+	-webkit-box-shadow: 0 0 30px black;
+	-moz-box-shadow: 0 0 30px black;
+	-o-box-shadow: 0 0 30px black;
+	box-shadow: 0 0 30px black;
+}
+#featured1{
+	background-image: url('../images/math.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured2{
+	background-image: url('../images/programming.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured3{
+	background-image: url('../images/economy.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured4{
+	background-image: url('../images/physics.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured5{
+	background-image: url('../images/entrepreneurship.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured6{
+	background-image: url('../images/psichology.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured7{
+	background-image: url('../images/biology.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#featured8{
+	background-image: url('../images/chemistry.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+.featured{
+	width: 100%;
+	height: 150px;
+	background-color: blue;
+}
+
+#courseAuthor{
+	margin-top: -20px;
+	font-size: 0.7em;
+}
+#courseName{
+	color: rgba(0, 137, 255, 0.9);
+}
+
+/*HEADER END*/
+
+/*SIGN_LOG*/
+
+#sl{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 1;
+	display: none;
+}
+#sl_login{
+	margin-top: 10%;
+	background-color: white;
+	width: 50%;
+	padding: 20px;
+	border: 5px solid rgba(0, 137, 255, 0.9);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+#sl_signup{
+	margin-top: 10%;
+	background-color: white;
+	width: 50%;
+	padding: 20px;
+	border: 5px solid rgba(0, 137, 255, 0.9);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+#sl_login input{
+	height: 40px;
+	width: 80%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#sl_close{
+	height: 20px;
+	float: right;
+	margin-top: 60px;
+	margin-left: 88%;
+	margin-right: 30px;
+	position: absolute;
+	cursor: pointer;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+	border: 1px solid rgba(100, 100, 100, 1);
+	padding: 10px;
+	-webkit-transition: border 0.1s ease-in;
+	-moz-transition: border 0.1s ease-in;
+	-o-transition: border 0.1s ease-in;
+	transition: border 0.1s ease-in;
+	
+}
+#sl_close:hover{
+	border: 1px solid white;
+
+}
+.s_l{
+	display: inline-block;
+	color: white;
+	padding: 20px;
+	margin-top: 100px;
+}
+.slOn{
+	background-color: rgba(0, 137, 255, 1);
+}
+
+#sl_signup input{
+	height: 40px;
+	width: 80%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*SIGN_LOG END*/
+
+/*FOOTER*/
+
+#footer_container{
+	width: 100%;
+}
+#view_courses{
+	margin-top: 20px;
+	background-color: none;
+	border: 1px solid rgba(0, 137, 255, 0.2);
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	width: 86%;
+	font-size: 15px;
+	background-color: rgb(220, 220, 220);
+	color: rgba(0, 137, 255, 1);
+}
+.footer_col{
+	display: inline-block;
+	width: 36%;
+	margin: 20px;
+	text-align: left;
+}
+#footer_descr{
+	width: 80%;
+}
+#footer_contact{
+	word-wrap: break-word;
+	font-size: 0.65em;
+}
+/*FOOTER END*/	
+
+/*JOIN_CARDS*/
+
+#join_cards_container{
+	width: 100%;
+}
+#join_c{
+	width: 100%;
+	height: 550px;
+	margin-top: 0px;
+}
+#card_head{
+	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.card{
+	height: 30%;
+	width: 35%;
+	border-radius: 10px;
+	display: inline-block;
+	box-shadow: 0 5px 20px;
+	background-color: white;
+
+}
+#card1{
+	position: relative;
+	z-index: 9;
+	height: 200px;	
+	border-top: inset 30px blue;
+}
+#card2{
+	position: relative;
+	margin-top: -20px;
+	z-index: 10;
+	height: 200px;
+	border-top: inset 30px red;
+}
+#card3{
+	position: relative;
+	height: 200px;
+	width: 80%;
+	z-index: 9;
+
+	border-top: inset 30px rgba(123, 255, 0, 0.9);;
+
+}
+.perc_back{
+	height: 15px;
+	background-color: rgb(240, 240 ,240);
+	width: 90%;
+	margin-top: -20px;
+}
+.perc1{
+	height: 100%;
+	width: 90%;
+	background-color: rgba(255, 77, 77, 1);
+	color: white;
+}
+.perc2{
+	height: 100%;
+	background-color: red;
+	width: 60%;
+	background-color: rgba(255, 77, 77, 1);
+	color: white;
+}
+.perc3{
+	height: 100%;
+	background-color: red;
+	width: 80%;
+	background-color: rgba(255, 77, 77, 1);
+	color: white;
+}
+.perc4{
+	height: 100%;
+	background-color: red;
+	width: 75%;
+	background-color: rgba(255, 77, 77, 1);
+	color: white;
+}
+
+
+/*JOIN_CARD END*/
