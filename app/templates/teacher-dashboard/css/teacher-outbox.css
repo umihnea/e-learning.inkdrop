@@ -1,0 +1,18 @@
+/*Messaging*/
+
+#view{
+	opacity: 0;
+}
+.message:hover #view{
+	opacity: 1;
+}
+.new{
+	background-color: rgba(0, 0, 255, 0.2)
+}
+#messages-list{
+	margin-top: 30px;
+}
+#messages-container{
+	max-height: 440px;
+	overflow: auto;
+}

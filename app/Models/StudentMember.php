@@ -7,7 +7,7 @@ use Helpers\Session;
 use Helpers\Url;
 use PDO;
 
-class Member extends Model
+class StudentMember extends Model
 {    
     function __construct()
     {
@@ -76,6 +76,7 @@ class Member extends Model
 	                    'activare' => $activation
 	                );
 	                $id = $this->insertMember($postdata); // the id will help later with the link in the email
+
 	        }
 	    return $error;
     }
@@ -89,6 +90,7 @@ class Member extends Model
                 Session::set('studentID', $data[0]->idStudenti);
                 Session::set('username', $data[0]->nume_login);
                 Session::set('loggedin', true);
+                Session::set('level', 'student');
 
                 if ($post['login_remember_me'])
                 {
@@ -141,6 +143,7 @@ class Member extends Model
 			Session::set('studentID', $data[0]->idStudenti);
             Session::set('username', $data[0]->nume_login);
             Session::set('loggedin', true);
+            Session::set('level', 'student');
 
             $error[] = 'Cookie login successful.';
         	return $error;

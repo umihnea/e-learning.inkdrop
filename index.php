@@ -67,7 +67,15 @@ Router::any('login', 'Controllers\Landing@login');
 Router::any('about', 'Controllers\Landing@about');
 Router::any('logout', 'Controllers\Landing@logout');
 Router::any('activate/(:num)/(:any)', 'Controllers\Landing@activate');
-Router::any('student', 'Controllers\Student@index');
+Router::any('teacher', 'Controllers\TeacherDashboard@index');
+Router::any('teacher/compose', 'Controllers\TeacherDashboard@compose');
+Router::any('teacher/login', 'Controllers\TeacherAuth@login');
+Router::any('teacher/new-group', 'Controllers\TeacherDashboard@newGroup');
+Router::any('teacher/submit-group', 'Controllers\TeacherDashboard@submitGroup');
+Router::any('teacher/new-group-2', 'Controllers\TeacherDashboard@newGroup2');
+Router::any('teacher/group/(:num)', 'Controllers\TeacherDashboard@groupProfile');
+Router::any('teacher/course-upload', 'Controllers\TeacherDashboard@uploadCourse');
+//Router::any('drop', 'Controllers\TeacherDashboard@drop');
 
 //module routes
 $hooks = Hooks::get();

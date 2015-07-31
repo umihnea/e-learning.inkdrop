@@ -1,0 +1,29 @@
+/*Messaging*/
+
+#view{
+	opacity: 0;
+}
+.message:hover #view{
+	opacity: 1;
+}
+#messages-list{
+	margin-top: 30px;
+}
+#messages-container{
+	max-height: 440px;
+	overflow: auto;
+}
+
+/*Tiny Style*/
+
+#tiny-container{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	margin-top: -80%;
+}
+#tiny-form{
+	margin-top: 10%;
+}
